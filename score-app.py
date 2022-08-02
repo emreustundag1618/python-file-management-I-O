@@ -46,7 +46,7 @@ def addScore():
     score3 = input("Score 3: ")
 
     with open("scores.txt", "a", encoding="utf-8") as file:
-        file.write(name + ' ' + surname + ' ' + score1 + ' ' + score2 + ' ' + score3+'\n')
+        file.write(name + ' ' + surname + ':' + score1 + ' ' + score2 + ' ' + score3+'\n')
 
 def recordScore():
     with open("scores.txt", "r", encoding = "utf-8") as file:
